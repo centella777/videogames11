@@ -1,0 +1,144 @@
+.ps-plus-section {
+    text-align: center;
+}
+
+.ps-plus-section h2 {
+    color: var(--color-neon-green-dark);
+    font-family: 'Orbitron', sans-serif;
+    margin-bottom: 25px;
+    font-size: 2.5em;
+    text-shadow: 0 0 12px var(--color-neon-green-medium);
+}
+
+.ps-plus-section p {
+    color: #555;
+    font-size: 1.15em;
+    margin-bottom: 40px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.ps-plus-tiers {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 35px;
+    margin-top: 40px;
+}
+
+.tier-card {
+    background-color: #f0fff0; /* Fondo más claro para tarjetas de PS Plus */
+    border: 3px solid var(--color-neon-green-medium);
+    border-radius: 20px;
+    box-shadow: 0 10px 30px var(--color-shadow-strong);
+    padding: 30px;
+    width: 100%;
+    max-width: 380px;
+    text-align: left;
+    transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out, border-color 0.4s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.tier-card::before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    background: radial-gradient(circle, rgba(0,255,0,0.1) 0%, transparent 70%);
+    z-index: 0;
+    transition: transform 0.5s ease-out, opacity 0.5s ease;
+    opacity: 0;
+}
+
+.tier-card:hover::before {
+    transform: scale(1.1);
+    opacity: 1;
+}
+
+.tier-card:hover {
+    transform: translateY(-15px) rotateX(2deg);
+    box-shadow: 0 15px 40px var(--color-shadow-strong);
+    border-color: var(--color-neon-green-dark);
+}
+
+.tier-card h3 {
+    color: var(--color-neon-green-dark);
+    font-family: 'Orbitron', sans-serif;
+    font-size: 2em;
+    margin-bottom: 20px;
+    text-align: center;
+    text-shadow: 0 0 10px var(--color-neon-green-light);
+    position: relative;
+    z-index: 1;
+}
+
+.tier-card ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+.tier-card ul li {
+    background-color: rgba(0, 255, 0, 0.05); /* Ligeramente más verde */
+    padding: 12px 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 1.05em;
+    color: #444;
+    border-left: 5px solid var(--color-neon-green-medium);
+    transition: background-color 0.2s ease;
+}
+
+.tier-card ul li:hover {
+    background-color: rgba(0, 255, 0, 0.15);
+}
+
+.tier-card ul li::before {
+    content: '✅'; /* Un ícono de check */
+    margin-right: 10px;
+    font-size: 1.2em;
+    color: var(--color-neon-green-dark);
+}
+
+.tier-card .plus-benefits {
+    font-style: italic;
+    color: #777;
+    margin-top: -10px;
+    margin-bottom: 15px;
+    font-size: 0.95em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+.tier-card .tier-price {
+    font-family: 'Orbitron', sans-serif;
+    color: var(--color-neon-green-dark);
+    font-size: 2.2em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 30px;
+    text-shadow: 0 0 12px var(--color-neon-green-medium);
+    background: linear-gradient(90deg, transparent, var(--color-neon-green-light) 50%, transparent);
+    padding: 10px 0;
+    border-radius: 10px;
+    position: relative;
+    z-index: 1;
+}
+
+.ps-plus-note {
+    font-size: 1.1em;
+    color: #666;
+    margin-top: 50px;
+    font-style: italic;
+    border-top: 1px dashed var(--color-neon-green-light);
+    padding-top: 20px;
+}

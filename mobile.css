@@ -1,0 +1,98 @@
+/* Media Queries para Tablets y Móviles */
+@media (max-width: 768px) {
+    .main-nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main-nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-image {
+        /* Ajustes para que la imagen de la cabecera se vea bien en móviles */
+        height: 250px; /* Altura fija o ajustada */
+        object-fit: cover; /* Para que la imagen cubra el espacio */
+    }
+
+    .section {
+        padding: 25px;
+        margin-bottom: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.8em;
+    }
+
+    .product-slider,
+    .ps-plus-tiers {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product-card,
+    .tier-card {
+        max-width: 90%; /* Ocupa casi todo el ancho disponible */
+        margin-bottom: 20px;
+    }
+
+    .product-card h3,
+    .tier-card h3 {
+        font-size: 1.4em;
+    }
+
+    .product-card .price,
+    .tier-card .tier-price {
+        font-size: 1.6em;
+    }
+
+    .contact-info p {
+        font-size: 0.95em;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        font-size: 0.9em;
+    }
+
+    .main-header {
+        padding: 15px 0;
+    }
+
+    .header-image {
+        height: 180px;
+    }
+
+    .main-nav ul li a {
+        font-size: 1em;
+        padding: 8px 12px;
+    }
+
+    .section {
+        padding: 20px;
+    }
+
+    .section h2 {
+        font-size: 1.6em;
+    }
+
+    .product-card,
+    .tier-card {
+        padding: 15px;
+    }
+
+    .product-card h3,
+    .tier-card h3 {
+        font-size: 1.2em;
+    }
+
+    .product-card p,
+    .tier-card ul li {
+        font-size: 0.9em;
+    }
+
+    .main-footer {
+        padding: 15px 0;
+    }
+}
